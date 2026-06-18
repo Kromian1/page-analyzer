@@ -6,8 +6,13 @@
                  <p class="lead">Бесплатно проверяйте сайты на SEO-пригодность</p>
              </div>
              <form action="<?= $router->urlFor('urls.post') ?>" method="post">
+                 <label for="url" class="visually-hidden">
+                     URL
+                 </label>
+
                  <div class="input-group input-group-lg">
                      <input
+                             id="url"
                              type="url"
                              name="url"
                              class="form-control"
